@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --open --hot",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src/*.js --fix --color"
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/*.js --fix --color",
+    "prettier:fix": "prettier src/ --write"
   },
   "keywords": [
     "create-react-app",
@@ -60,8 +61,8 @@
     }
   },
   "lint-staged": {
-    "./src/*.{js,jsx}": [
-      "npx prettier --write",
+    "src/*.{js,jsx}": [
+      "npm run prettier:fix",
       "npm run lint:fix",
       "git add"
     ]
