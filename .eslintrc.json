@@ -37,7 +37,8 @@
         "space-before-function-paren": "off",
         "indent": ["error", 2],
         "class-methods-use-this": "off",
-        "object-shorthand": "off"
+        "object-shorthand": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     },
     "settings": {
         "react": {
