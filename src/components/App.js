@@ -12,7 +12,12 @@ class App extends React.Component {
     const { name } = this.state;
     return (
       <div class="App">
-                        <h1 className="main-header">My   {name}</h1>
+                        
+                        
+                        
+                        <h1 className="main-header">My   
+                        
+                        {name}</h1>
 
         <div>
           <img src={image} alt="react logo" />
