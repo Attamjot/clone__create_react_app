@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+               "debug": false,
+               "modules": false,
+               "targets": {
+                "browsers": [">1%"] // "not IE < 12"  "last 2 versions", "safari >= 7", "ie >=7"
+               },
+               "useBuiltIns": "usage",
+               "corejs": {
+                "version": 2
+               }
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ]
+}
