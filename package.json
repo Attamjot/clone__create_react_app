@@ -9,6 +9,18 @@
     "lint:fix": "eslint src/*.js --fix --color",
     "prettier:fix": "prettier src/ --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.{js,jsx}": [
+      "npm run prettier:fix",
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
   "keywords": [
     "create-react-app",
     "react scaffolding",
@@ -54,17 +66,5 @@
     "core-js": "^2.6.11",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/*.{js,jsx}": [
-      "npm run prettier:fix",
-      "npm run lint:fix",
-      "git add"
-    ]
   }
 }
