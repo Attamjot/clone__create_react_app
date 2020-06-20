@@ -40,8 +40,8 @@ I am creating a clone of create-react-app with most of the features.
 17. prettier
 
 ### `Pre-commit tools`
-18. husky
-19. lint-staged
+18. husky -- updated
+19. lint-staged -- updated configuration
 
 ### `webpack dependencies`
 
